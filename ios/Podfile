@@ -12,6 +12,10 @@ target 'ContactsPermission' do
     :hermes_enabled => false
   )
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+
+  pod 'Permission-Contacts', :path => "#{permissions_path}/Contacts"
+
   target 'ContactsPermissionTests' do
     inherit! :complete
     # Pods for testing
